@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Your Tax Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here you can check your latest GST and Income tax details.\n\n Tap below to continue."
+        android:textSize="20sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/buttonGST"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="View GST Details"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:background="@drawable/button_bg"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/buttonIncome"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="View Income Tax Details"
+        android:background="@drawable/button_bg"
+        android:textSize="18sp"
+        android:padding="16dp" />
+</LinearLayout>

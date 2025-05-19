@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "261698989310",
+    "firebase_url": "https://taxprojectdb-default-rtdb.firebaseio.com",
+    "project_id": "taxprojectdb",
+    "storage_bucket": "taxprojectdb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261698989310:android:d94a0d0bdb2a2d2b9a49af",
+        "android_client_info": {
+          "package_name": "com.example.taxproj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXddeFmGMJ1H9rr7yyBX8FzChapgclhzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261698989310:android:019d295d031ff5769a49af",
+        "android_client_info": {
+          "package_name": "com.example.wifiexample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXddeFmGMJ1H9rr7yyBX8FzChapgclhzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
