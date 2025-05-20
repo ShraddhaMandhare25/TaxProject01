@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -59,18 +60,31 @@ DatabaseReference db;
             }
         });
 
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                String info=(String)adapterView.getItemAtPosition(i).toString() ;
+
+                Intent i4 = new Intent(list.this, admin2.class);
+                i4.putExtra("INFO", info);
+               // i4.putExtra("PAN",)
+                startActivity(i4);
+                Toast.makeText(list.this, "Clicked for:\n " + info, Toast.LENGTH_LONG).show();
+            }
+        }) ;
+
         // Set up click listeners for the buttons
-        /*listView.setOnItemClickListener((parent, view, position, id) -> {
+       /* listView.setOnItemClickListener((parent, view, position, id) -> {
             // Get references to the buttons
             Button gstButton = view.findViewById(R.id.gstReminderButton);
             Button incomeTaxButton = view.findViewById(R.id.incomeTaxButton);
 
             // Set click listeners for GST button
             gstButton.setOnClickListener(v -> {
-                String selectedItem = items[position];
-                Toast.makeText(list.this,
-                        "GST Reminder clicked for: " + selectedItem,
-                        Toast.LENGTH_SHORT).show();
+               // String selectedItem = items[position];
+                Toast.makeText(list.this, "GST Reminder clicked for: " + position, Toast.LENGTH_SHORT).show();
 
                 // You can add navigation to GST reminder screen here
                 // Intent intent = new Intent(MainActivity.this, GSTReminderActivity.class);
@@ -79,10 +93,8 @@ DatabaseReference db;
 
             // Set click listeners for Income Tax button
             incomeTaxButton.setOnClickListener(v -> {
-                String selectedItem = items[position];
-                Toast.makeText(list.this,
-                        "Income Tax clicked for: " + selectedItem,
-                        Toast.LENGTH_SHORT).show();
+               // String selectedItem = items[position];
+                Toast.makeText(list.this,"Income Tax clicked for: " + position,Toast.LENGTH_SHORT).show();
 
                 // You can add navigation to Income Tax screen here
                 // Intent intent = new Intent(MainActivity.this, IncomeTaxActivity.class);
