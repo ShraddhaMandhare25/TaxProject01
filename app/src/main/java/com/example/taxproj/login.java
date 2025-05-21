@@ -32,6 +32,7 @@ public class login extends AppCompatActivity {
                 String panNo = pan.getText().toString().toUpperCase();
                 String p = pass.getText().toString();
                 String n = name.getText().toString();
+
                 String passValidation = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=\\S+$).{4,}$";
 
 

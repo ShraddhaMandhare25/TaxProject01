@@ -30,6 +30,7 @@ DatabaseReference db;
         @Override
         public void onClick(View view) {
             Intent i= new Intent(admin2.this, reminder.class);
+i.putExtra("INFO",ans);
             startActivity(i);
         }
     });

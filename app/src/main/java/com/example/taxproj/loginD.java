@@ -2,13 +2,14 @@ package com.example.taxproj;
 
 public class loginD
 {
-    String pan,pass,name;
+    String pan,pass,name,remind;
 
 public loginD(String pan, String pass,String name)
         {
         this.pan=pan;
         this.pass=pass;
         this.name=name;
+
         }
 
 public String getPan() { return pan; }
@@ -24,6 +25,9 @@ public void setPass(String pass) {
         public void setName(String name) {
                 this.name = name;
         }
+
+
+
 }
 
 

@@ -31,7 +31,7 @@ DatabaseReference db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adminpg);
+        //setContentView(R.layout.activity_adminpg);
         setContentView(R.layout.activity_list);
 
         listView = findViewById(R.id.listView);
@@ -47,7 +47,7 @@ DatabaseReference db;
                 myArrayList.clear() ;
                 for (DataSnapshot snapshot1 : snapshot.getChildren()) {
                     // String u="User="+snapshot1.child("user").getValue().toString()+"MOB="+snapshot1.child("mob").getValue().toString() ;
-                    String u="USER="+snapshot1.child("name").getValue().toString()+"\nPAN="+snapshot1.child("pan").getValue().toString() ;;
+                    String u="USER="+snapshot1.child("name").getValue().toString()+"\nPAN="+snapshot1.child("pan").getValue().toString() ;
 
                     myArrayList.add(u.toString());
                 }
