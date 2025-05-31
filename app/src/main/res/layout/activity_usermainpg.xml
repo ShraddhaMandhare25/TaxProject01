@@ -19,14 +19,14 @@
         android:id="@+id/textDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Here you can track and update your client's latest GST and Income tax details.\n\n Tap below to continue."
+        android:text="Here you can check your latest GST and Income tax details.\n\n Tap below to continue."
         android:textSize="20sp"
         android:textColor="#666666"
         android:gravity="center"
         android:layout_marginBottom="30dp" />
 
     <Button
-        android:id="@+id/buttonGST"
+        android:id="@+id/btnGST"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:text="View GST Details"
@@ -36,7 +36,7 @@
         android:padding="16dp" />
 
     <Button
-        android:id="@+id/buttonIncome"
+        android:id="@+id/btnIncome"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:text="View Income Tax Details"

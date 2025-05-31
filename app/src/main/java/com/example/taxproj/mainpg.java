@@ -20,6 +20,7 @@ Button gst,income;
         gst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent i=new Intent(mainpg.this, list.class);
                 startActivity(i);
             }
